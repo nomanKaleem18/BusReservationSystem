@@ -1,0 +1,7 @@
+<!-- res/drawable/otp_box_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#E0E0E0"/>
+    <corners android:radius="8dp"/>
+    <stroke android:color="#BDBDBD" android:width="2dp"/>
+</shape>

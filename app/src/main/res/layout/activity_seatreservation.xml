@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dasboard">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_radius_background"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="25sp"
+    android:fontFamily="@font/bungee"
+    android:text="Select Your Seat"
+    android:gravity="center"
+    android:layout_marginTop="-220dp"
+    />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="30dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Lahore"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="To"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Lahore"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                android:text="1/feb/2024"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <!-- OTP-type boxes for Friday, Saturday, and Sunday -->
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add a GridLayout for OTP Boxes -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <!-- First TextView for "Available" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Available"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+        <TextView
+
+            android:id="@+id/digit1"
+            style="@style/OtpDigitStyle" />
+        <!-- Second TextView for "Booked" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:padding="8dp"
+            android:text="Booked"
+            android:textSize="18sp" />
+
+        <TextView
+
+            style="@style/OtpDigitStyle"
+            android:backgroundTint="#DDA6E6" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:columnCount="3"
+        android:rowCount="7">
+
+        <!-- Define 20 OTP Boxes (You can customize the appearance as needed) -->
+        <TextView
+
+
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#DDA6E6"
+            android:gravity="center"
+            android:hint="1"
+
+            />
+
+        <TextView
+
+            android:id="@+id/otpBox1"
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="2"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#DDA6E6"
+            android:gravity="center"
+            android:hint="3"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+            android:id="@+id/otpBox2"
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="4"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#DDA6E6"
+            android:gravity="center"
+            android:hint="5"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+            android:id="@+id/otpBox3"
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="6"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#DDA6E6"
+            android:gravity="center"
+            android:hint="6"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+            android:id="@+id/otpBox4"
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="7"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+            android:id="@+id/otpBox5"
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="8"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+            android:id="@+id/otpBox6"
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="9"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#DDA6E6"
+            android:gravity="center"
+            android:hint="10"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#DDA6E6"
+
+            android:gravity="center"
+            android:hint="11"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#DDA6E6"
+            android:gravity="center"
+            android:hint="12"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            android:id="@+id/otpBox7"
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="13"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#DDA6E6"
+            android:gravity="center"
+            android:hint="14"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#DDA6E6"
+            android:gravity="center"
+            android:hint="15"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            android:id="@+id/otpBox8"
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="16"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+
+
+            android:id="@+id/otpBox9"
+            style="@style/OtpDigitStyle"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="17"
+            android:inputType="number"
+            android:maxLength="1" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:text="Book Seat"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#3E97BF"
+        />
+</LinearLayout>

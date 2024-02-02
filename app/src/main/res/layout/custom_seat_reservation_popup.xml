@@ -1,0 +1,26 @@
+<!-- res/layout/custom_seat_reservation_popup.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/popupMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your temporary seat has been reserved!"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+
+        android:backgroundTint="#3E97BF"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

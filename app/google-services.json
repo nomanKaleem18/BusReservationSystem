@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "463822408159",
+    "project_id": "bus-reservation-system-7bbce",
+    "storage_bucket": "bus-reservation-system-7bbce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463822408159:android:53ab5f0935512f6aa79c6a",
+        "android_client_info": {
+          "package_name": "com.example.busreservationsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjwVQrSnMhWYnEd4ncVVLWR__3J8oWLGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

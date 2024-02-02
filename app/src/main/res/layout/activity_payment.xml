@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".payment">
+
+
+        <!-- JazzCash Option -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radius_background">
+
+        </View>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:text="Select payment Method"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_marginTop="-660dp"
+    android:fontFamily="@font/bungee"
+        />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/jazzCardView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:id="@+id/jaz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:src="@drawable/jazzcashlogo" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="JazzCash"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- EasyPaisa Option -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/easyCardView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/easy"
+                    android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+
+                            android:src="@drawable/easy" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="EasyPaisa"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
